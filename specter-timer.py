@@ -60,6 +60,8 @@ else:
     p = multiprocessing.Pool(opts.nproc)
     results = p.map(wrap_ex2d, args)
 
+print('{} Done'.format(time.asctime()))
+
 t3 = time.time()
 print('I/O time: {:.1f} sec'.format(t1-t0))
 print('Prep time: {:.1f} sec'.format(t2-t1))
