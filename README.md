@@ -32,3 +32,11 @@ Prep time: 3.8 sec
 Extraction time: 202.3 sec
 Total time: 209.0 sec
 ```
+
+The most important timing number is the "Extraction time", which covers
+the core algorithm kernel.  The other "I/O" and "Prep" timing is specific
+to this benchmark wrapper script, though if those were radically different
+on another system that would also be of interest (or concern).
+
+
+
